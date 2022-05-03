@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> Simple Calculator using HTML, CSS and JavaScript </title>
+    <link rel="stylesheet" href="calculator.component.css">
+</head>
+
+<body>
+    <h1>Simple calculator</h1>
+    <div class="calculator">
+        <input type="text" maxlength="20" class="input" [value]="currentNumber" disabled>
+        <div class="calc-buttons">
+
+            <div class="functions-one">
+                <button class="button triggers" (click)="clear()">C</button>
+                <button class="button numbers" type="button" (click)='enterValue("9")'>9</button>
+                <button class="button numbers" type="button" (click)='enterValue("8")'>8</button>
+                <button class="button numbers" type="button" (click)='enterValue("7")'>7</button>
+                <button class="button numbers" type="button" (click)='enterValue("6")'>6</button>
+                <button class="button numbers" type="button" (click)='enterValue("5")'>5</button>
+                <button class="button numbers" type="button" (click)='enterValue("4")'>4</button>
+                <button class="button numbers" type="button" (click)='enterValue("3")'>3</button>
+                <button class="button numbers" type="button" (click)='enterValue("2")'>2</button>
+                <button class="button numbers" type="button" (click)='enterValue("1")'>1</button>
+                <button class="button numbers" type="button" (click)='enterValue("0")'>0</button>
+                <button class="button basic-stuff" type="getDecimal()">.</button>
+            </div>
+            <div class="functions-two">
+                <button class="button basic-stuff" (click)='getOperation("+")'>+</button>
+                <button class="button basic-stuff" (click)='getOperation("-")'>-</button>
+                <button class="button basic-stuff" (click)='getOperation("*")'>*</button>
+                <button class="button basic-stuff" (click)='getOperation("/")'>/</button>
+                <button class="button basic-stuff" (click)='getOperation("=")'>=</button>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
